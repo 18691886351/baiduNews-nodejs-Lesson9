@@ -1,3 +1,3 @@
-#express_mvc
-例子请看具体代码
-控制器访问基于路由 例子：localhost:3000/user/user
+#百度新闻node.js mvc
+localhost:3000/index.html --新闻展示界面
+localhost:3000/admin.html --新闻管理界面
