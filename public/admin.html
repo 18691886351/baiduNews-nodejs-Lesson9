@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>百度新闻管理</title>
     <link href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+
     <link href="http://cdn.bootcss.com/normalize/5.0.0/normalize.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./static/css/admin.css">
 </head>
@@ -21,7 +22,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">百度新闻</a>
+                <a class="navbar-brand" href="./index.html">百度新闻</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -45,7 +46,7 @@
                         <table id="news-table" class="table table-bordered">
                             <thead>
                                 <tr>
-                                    <th>序号</th>
+                                    <th>ID</th>
                                     <th>类型</th>
                                     <!-- <th>图片</th> -->
                                     <th>标题</th>
@@ -85,25 +86,30 @@
                             </div>
                             <div class="form-group">
                                 <label for="input-newImage">图片</label>
-                                <input type="text" class="form-control" id="input-newImage" placeholder="图片地址">
+                                <input type="text" class="form-control" id="input-newImage" placeholder="图片地址" >
+                                <span class="glyphicon form-control-feedback sr-only"></span>
                             </div>
                             <div class="form-group">
                                 <label for="input-newTitle">标题</label>
-                                <input type="text" class="form-control" id="input-newTitle" placeholder="标题">
+                                <input type="text" class="form-control" id="input-newTitle" placeholder="标题" >
+                                <span class="glyphicon form-control-feedback sr-only"></span>
                             </div>
                             <div class="form-group">
                                 <label for="input-newPubDate">发布日期</label>
-                                <input type="text" class="form-control" id="input-newPubDate" placeholder="发布日期">
+                                <input type="date" class="form-control" id="input-newPubDate" placeholder="发布日期" >
+                                <span class="glyphicon form-control-feedback sr-only"></span>
                             </div>
                             <div class="form-group">
                                 <label for="input-mark">标记</label>
-                                <input type="text" class="form-control" id="input-newMark" placeholder="标记">
+                                <input type="text" class="form-control" id="input-newMark" placeholder="标记" >
+                                <span class="glyphicon form-control-feedback sr-only"></span>
                             </div>
                             <div class="form-group">
                                 <label for="input-newurl">新闻来源</label>
                                 <input type="text" class="form-control" id="input-newurl" placeholder="新闻来源">
+                                <span class="glyphicon form-control-feedback sr-only"></span>
                             </div>
-                            <button id="edite-panel-button" type="button" class="btn btn-info">提交</button>
+                            <button id="edite-panel-button" type="submit" class="btn btn-info">提交</button>
                             <span id="edite-result"></span>
                         </form>
                     </div>
@@ -135,22 +141,27 @@
                             <div class="form-group">
                                 <label for="input-newImage">图片</label>
                                 <input type="text" class="form-control" id="input-newImage" placeholder="图片地址">
+                                <span class="glyphicon form-control-feedback sr-only"></span>
                             </div>
                             <div class="form-group">
                                 <label for="input-newTitle">标题</label>
                                 <input type="text" class="form-control" id="input-newTitle" placeholder="标题">
+                                <span class="glyphicon form-control-feedback sr-only"></span>
                             </div>
                             <div class="form-group">
                                 <label for="input-newPubDate">发布日期</label>
-                                <input type="text" class="form-control" id="input-newPubDate" placeholder="发布日期">
+                                <input type="date" class="form-control" id="input-newPubDate" placeholder="发布日期">
+                                <span class="glyphicon form-control-feedback sr-only"></span>
                             </div>
                             <div class="form-group">
                                 <label for="input-mark">标记</label>
                                 <input type="text" class="form-control" id="input-newMark" placeholder="标记">
+                                <span class="glyphicon form-control-feedback sr-only"></span>
                             </div>
                             <div class="form-group">
                                 <label for="input-newurl">新闻来源</label>
                                 <input type="text" class="form-control" id="input-newurl" placeholder="新闻来源">
+                                <span class="glyphicon form-control-feedback sr-only"></span>
                             </div>
                             <button id="add-panel-button" type="button" class="btn btn-info">提交</button>
                             <span id="add-result"></span>
